@@ -9,7 +9,7 @@ def allocate_word(w):
   if not key in plip:
     plip[key] = []
     
-  plip[key].append(w)
+  plip[key].append(w.lower())
 
 
 with open('difficult_words_shitty_list.csv', 'r') as csvfile:
